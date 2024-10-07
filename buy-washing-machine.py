@@ -11,14 +11,12 @@ import time
 chrome_options = Options()
 chrome_options.add_argument("--start-maximized")
 
-# Set path for the ChromeDriver
-service = Service("chromedriver-mac-arm64")  # Replace with your ChromeDriver path
-
 # Create a new instance of the Chrome driver
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome()
+
 
 # 1. Open Amazon.com (Basic Navigation)
-driver.get("https://www.amazon.com")
+driver.get("https://www.amazon.in")
 
 # Allow time for the page to load
 time.sleep(2)
@@ -32,14 +30,14 @@ time.sleep(2)
 
 # 3. Input Amazon credentials (Handling Forms & Input)
 email_input = driver.find_element(By.ID, 'ap_email')
-email_input.send_keys("your-email@example.com")  # Replace with your email
+email_input.send_keys("nachikul1993@gmail.com")  # Replace with your email
 driver.find_element(By.ID, 'continue').click()
 
 # Allow time for the next page to load
 time.sleep(2)
 
 password_input = driver.find_element(By.ID, 'ap_password')
-password_input.send_keys("your-password")  # Replace with your password
+password_input.send_keys("Nachidevika@93")  # Replace with your password
 driver.find_element(By.ID, 'signInSubmit').click()
 
 # Wait for the home page to load after login
