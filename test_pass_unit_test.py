@@ -24,10 +24,10 @@ class AmazonTVSearchTestPass(unittest.TestCase):
         # Login steps
         driver.find_element(By.ID, 'nav-link-accountList').click()
         time.sleep(2)
-        driver.find_element(By.ID, 'ap_email').send_keys("nachikul1993@gmail.com")
+        driver.find_element(By.ID, 'ap_email').send_keys("test@gmail.com")
         driver.find_element(By.ID, 'continue').click()
         time.sleep(2)
-        driver.find_element(By.ID, 'ap_password').send_keys("Nachidevika@93")
+        driver.find_element(By.ID, 'ap_password').send_keys("test")
         driver.find_element(By.ID, 'signInSubmit').click()
         time.sleep(5)
 

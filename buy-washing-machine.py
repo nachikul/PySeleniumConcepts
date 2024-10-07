@@ -30,14 +30,14 @@ time.sleep(2)
 
 # 3. Input Amazon credentials (Handling Forms & Input)
 email_input = driver.find_element(By.ID, 'ap_email')
-email_input.send_keys("nachikul1993@gmail.com")  # Replace with your email
+email_input.send_keys("test@gmail.com")  # Replace with your email
 driver.find_element(By.ID, 'continue').click()
 
 # Allow time for the next page to load
 time.sleep(2)
 
 password_input = driver.find_element(By.ID, 'ap_password')
-password_input.send_keys("Nachidevika@93")  # Replace with your password
+password_input.send_keys("test")  # Replace with your password
 driver.find_element(By.ID, 'signInSubmit').click()
 
 # Wait for the home page to load after login
